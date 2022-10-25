@@ -44,10 +44,36 @@
     <!------------------------------>
 
     <!-- our own navbar goes here -->
-    <nav id="navbarPlaceholder"></nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/Anila.(Granblue.Fantasy).600.1954014.jpg" height="36">
+                Troy's Hiking App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
     <!-- the body of your page goes here -->
-    <!-- stuff -->
+    <div class="container text-center">
+        <h1>Let's Login!</h1>
+    </div>
+    <div id="firebaseui-auth-container"></div>
+    <div id="loader">Loading...</div>
 
     <!-- our own footer goes here-->
     <nav id="footerPlaceholder"></nav>
@@ -58,6 +84,7 @@
     <script src="./scripts/firebaseAPI_TEAM99.js"></script>
     <script src="./scripts/skeleton.js"></script>
     <!-- <script src="./scripts/script.js"></script> -->
+    <script src="./scripts/authentication.js"></script>
 
 </body>
 
