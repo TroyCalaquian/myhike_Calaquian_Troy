@@ -75,7 +75,6 @@ function writeHikes() {
         last_updated: firebase.firestore.Timestamp.fromDate(new Date("March 10, 2022"))
     });
 }
-writeHikes();
 
 function displayCards(collection) {
     let cardTemplate = document.getElementById("hikeCardTemplate");
